@@ -58,7 +58,7 @@
                 <size units="GB">16</size>
                 <type>DDR4</type>
                 <speed units="MHz">3200</speed>
-              </g-skill>
+              </g_skill>
             </ram>
             <storage>
               <samsung_evo970>
