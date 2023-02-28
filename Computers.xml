@@ -1,93 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <computers>
-  <laptop type="gaming">
-    <brand>ASUS</brand>
-    <model>ROG Strix G15</model>
-    <type>G513RS-HQ032X</type>
-    <operatingsystem>Windows 11 pro</operatingsystem>
-    <processor>
-      <make>AMD</make>
-      <model>Ryzen 9 6900HX</model>
-      <speed units="GHz">4.9 max boost</speed>
-      <core>8-core/16thread, 20MB</core>
-    </processor>
-    <ram>
-      <size units="GB">16</size>
-      <type>DDR5</type>
-      <speed units="MHz">4800</speed>
-    </ram>
-    <graphics>
-      <make>NVIDIA</make>
-      <model>GeForce RTX 3080</model>
-      <type>DDR6</type>
-      <memory units="GB">8</memory>
-      <speed units="MHz">1545MHz Boost Clock+50MHz OC</speed>
-    </graphics>
-    <storage>
-      <type>NVMe M.2 SSD</type>
-      <size units="TB">1</size>
-    </storage>
-    <display>
-      <size units="inches">15.6</size>
-      <resolution>2560x1440</resolution>
-      <refresh_rate units="Hz">165</refresh_rate>
-    </display>
-    <battery units="Wh">90</battery>
+  <laptop>
+    <asus>
+        <rog_strix_g15>
+          <specification>
+              <processor>
+                <amd>
+                  <ryzen>9 6900HX</ryzen>
+                  <speed units="GHz">4.9 max boost</speed>
+                  <core>8/16thread, 20MB</core>
+                </amd>
+              </processor>
+               <ram>
+                  <size units="GB">16</size>
+                  <type>DDR5</type>
+                  <speed units="MHz">4800</speed>
+                </ram>
+                <graphics>
+                  <make>NVIDIA</make>
+                  <model>GeForce RTX 3080</model>
+                  <type>DDR6</type>
+                  <memory units="GB">8</memory>
+                  <speed units="MHz">1545MHz Boost Clock+50MHz OC</speed>
+                </graphics>
+                <storage>
+                  <type>NVMe M.2 SSD</type>
+                  <size units="TB">1</size>
+                </storage>
+                <display>
+                  <size units="inches">15.6</size>
+                  <resolution>2560x1440</resolution>
+                  <refresh_rate units="Hz">165</refresh_rate>
+                </display>
+                <battery>
+                  <watt_hour>90</watt_hour>
+                  <batt_span>up to 12 hours video playback</batt_span>
+                </battery>
+                <operating_system>Windows 11 pro</operating_system>
+          </specification>
+        </rog_strix_g15>
+    </asus>
   </laptop>
   
-  <desktop type="workstation">
-    <brand>ACER</brand>
-    <model>Predator PO3-640</model>
-    <processor>
-      <make>Intel</make>
-      <model>Core i7-12700F</model>
-      <speed units="GHz">2.10</speed>
-      <cores>Dodeca-core (12 Core™)</cores>
-    </processor>
-    <ram>
-      <size units="GB">16</size>
-      <type>DDR4 SDRAM</type>
-      <speed units="MHz">3200</speed>
-    </ram>
-    <storage>
-      <type>SSD</type>
-      <size units="TB">1</size>
-    </storage>
-    <monitor type="Predator XB273U NX">
-      <size units="inches">26</size>
-      <resolution>2560x1440</resolution>
-      <refresh_rate units="Hz">275</refresh_rate>
-    </monitor>
-    <graphics>
-      <make>NVIDIA</make>
-      <model>GeForce RTX 3070</model>
-      <memory units="GB">8</memory>
-    </graphics>
+  <desktop>
+    <acer>
+      <predator_po3-640>
+        <specification>
+            <processor>
+              <intel>
+                <core>i7-12700F</core>
+                <speed units="GHz">4.90</speed>
+                <cores>12/20 Threads</cores>
+              </intel>
+            </processor>
+            <ram>
+              <g_skill>
+                <size units="GB">16</size>
+                <type>DDR4</type>
+                <speed units="MHz">3200</speed>
+              </g-skill>
+            </ram>
+            <storage>
+              <samsung_evo970>
+                <type>VME M.2 SSD</type>
+                <size units="TB">1</size>
+              </samsung_evo970>
+            </storage>
+            <monitor>
+              <predator_xb273U_NX>
+                <size>26 inches</size>
+                <resolution>2560x1440</resolution>
+                <refresh_rate units="Hz">275</refresh_rate>
+              </predator_po3-640>
+            </monitor>
+            <graphics>
+              <rog_strix>
+                <model_type>GeForce RTX 4090 OC Edition</model_type>
+                <type>DDR6X</type>
+                <memory units="GB">24</memory>
+                <over_clock>
+                  <boost_clock>2460 MHz/Gaming mode up to 2610 MHz</boost_clock>
+                </over_clock>
+              </rog_strix>
+            </graphics>
+            <psu>
+              <rog_thor>
+                <total_watts>1200</total_watts>
+                <effeciency>80plus Platinum</effeciency>
+              </rog_thor>
+            </psu>
+        </specification>
+      </predator_po3-640>
+    </acer>
   </desktop>
-  
-  <laptop type="ultrabook">
-    <brand>Dell</brand>
-    <model>XPS 13</model>
-    <processor>
-      <make>Intel</make>
-      <model>Core i7</model>
-      <speed units="GHz">1.8</speed>
-    </processor>
-    <ram>
-      <size units="GB">16</size>
-      <type>LPDDR4x</type>
-      <speed units="MHz">4267</speed>
-    </ram>
-    <storage>
-      <type>SSD</type>
-      <size units="GB">512</size>
-      <speed units="MB/s">3500</speed>
-    </storage>
-    <display>
-      <size units="inches">13.3</size>
-      <resolution>3840x2160</resolution>
-      <touchscreen>true</touchscreen>
-    </display>
-    <battery units="Wh">52</battery>
-  </laptop>
 </computers>
