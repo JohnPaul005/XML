@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <computers>
   <laptop>
-    <asus>
-        <rog_strix_g15>
+    <brand name="Asus">
+        <model name="rog_strix_g15">
           <specification>
               <processor>
                 <amd>
@@ -38,59 +38,59 @@
                 </battery>
                 <operating_system>Windows 11 pro</operating_system>
           </specification>
-        </rog_strix_g15>
-    </asus>
+        </model>
+    </brand>
   </laptop>
   
   <desktop>
-    <acer>
-      <predator_po3-640>
+    <brand name="Acer">
+      <model name="predator_po3-640">
         <specification>
             <processor>
-              <intel>
+              <brand name="intel">
                 <core>i7-12700F</core>
                 <speed units="GHz">4.90</speed>
                 <cores>12/20 Threads</cores>
-              </intel>
+              </brand>
             </processor>
             <ram>
-              <g_skill>
+              <brand name="g_skill">
                 <size units="GB">16</size>
                 <type>DDR4</type>
                 <speed units="MHz">3200</speed>
-              </g_skill>
+              </brand>
             </ram>
             <storage>
-              <samsung_evo970>
+              <brand name="samsung_evo970">
                 <type>VME M.2 SSD</type>
                 <size units="TB">1</size>
-              </samsung_evo970>
+              </brand>
             </storage>
             <monitor>
-              <predator_xb273U_NX>
+              <brand name="predator_xb273U_NX">
                 <size>26 inches</size>
                 <resolution>2560x1440</resolution>
                 <refresh_rate units="Hz">275</refresh_rate>
-              </predator_xb273U_NX>
+              </brand>
             </monitor>
             <graphics>
-              <rog_strix>
+              <brand name="rog_strix">
                 <model_type>GeForce RTX 4090 OC Edition</model_type>
                 <type>DDR6X</type>
                 <memory units="GB">24</memory>
                 <over_clock>
                   <boost_clock>2460 MHz/Gaming mode up to 2610 MHz</boost_clock>
                 </over_clock>
-              </rog_strix>
+              </brand>
             </graphics>
             <psu>
-              <rog_thor>
+              <brand name="rog_thor">
                 <total_watts>1200</total_watts>
                 <effeciency>80plus Platinum</effeciency>
-              </rog_thor>
+              </brand>
             </psu>
         </specification>
-      </predator_po3-640>
-    </acer>
+      </model>
+    </brand>
   </desktop>
 </computers>
