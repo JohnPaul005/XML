@@ -6,7 +6,7 @@
           <specification>
               <processor>
                 <amd>
-                  <ryzen>9 6900HX</ryzen>
+                  <brand name="ryzen">9 6900HX</brand>
                   <speed units="GHz">4.9 max boost</speed>
                   <core>8/16thread, 20MB</core>
                 </amd>
