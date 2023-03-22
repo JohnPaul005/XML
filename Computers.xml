@@ -1,96 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <computers>
-  <laptop>
-    <brand name="Asus">
-        <model name="rog_strix_g15">
-          <specification>
-              <processor>
-                <amd>
-                  <brand name="ryzen">9 6900HX</brand>
-                  <speed units="GHz">4.9 max boost</speed>
-                  <core>8/16thread, 20MB</core>
-                </amd>
-              </processor>
-               <ram>
-                  <size units="GB">16</size>
-                  <type>DDR5</type>
-                  <speed units="MHz">4800</speed>
-                </ram>
-                <graphics>
-                  <make>NVIDIA</make>
-                  <model>GeForce RTX 3080</model>
-                  <type>DDR6</type>
-                  <memory units="GB">8</memory>
-                  <speed units="MHz">1545MHz Boost Clock+50MHz OC</speed>
-                </graphics>
-                <storage>
-                  <type>NVMe M.2 SSD</type>
-                  <size units="TB">1</size>
-                </storage>
-                <display>
-                  <size units="inches">15.6</size>
-                  <resolution>2560x1440</resolution>
-                  <refresh_rate units="Hz">165</refresh_rate>
-                </display>
-                <battery>
-                  <watt_hour>90</watt_hour>
-                  <batt_span>up to 12 hours video playback</batt_span>
-                </battery>
-                <operating_system>Windows 11 pro</operating_system>
-          </specification>
-        </model>
+  <laptop type="Gaming Laptop">
+    <brand model="Asus Rog_strix_g15">
+      <Processor>Ryzen 9 6900HX with 4.9Ghz max boost 8 cores 16 thread</Processor>
+      <Ram> 16 GB DDR5 4800 Mhz</Ram>
+      <GPU>NVIDIA GeForce RTX 3080 DDR6 8GB with 1545MHz Boost Clock+50MHz OC</GPU>
+      <Storage>NVMe M.2 SSD 1 TB</Storage>
+      <Display> 15.6 Inches Scrren with 2560x1440 resolution and 165Hz Refresh rate</Display>
+      <battery> 90 watt hour up to 12 hours video playback</battery>
+      <OS>Windows 11 pro</OS>
     </brand>
   </laptop>
   
-  <desktop>
-    <brand name="Acer">
-      <model name="predator_po3-640">
-        <specification>
-            <processor>
-              <brand name="intel">
-                <core>i7-12700F</core>
-                <speed units="GHz">4.90</speed>
-                <cores>12/20 Threads</cores>
-              </brand>
-            </processor>
-            <ram>
-              <brand name="g_skill">
-                <size units="GB">16</size>
-                <type>DDR4</type>
-                <speed units="MHz">3200</speed>
-              </brand>
-            </ram>
-            <storage>
-              <brand name="samsung_evo970">
-                <type>VME M.2 SSD</type>
-                <size units="TB">1</size>
-              </brand>
-            </storage>
-            <monitor>
-              <brand name="predator_xb273U_NX">
-                <size>26 inches</size>
-                <resolution>2560x1440</resolution>
-                <refresh_rate units="Hz">275</refresh_rate>
-              </brand>
-            </monitor>
-            <graphics>
-              <brand name="rog_strix">
-                <model_type>GeForce RTX 4090 OC Edition</model_type>
-                <type>DDR6X</type>
-                <memory units="GB">24</memory>
-                <over_clock>
-                  <boost_clock>2460 MHz/Gaming mode up to 2610 MHz</boost_clock>
-                </over_clock>
-              </brand>
-            </graphics>
-            <psu>
-              <brand name="rog_thor">
-                <total_watts>1200</total_watts>
-                <effeciency>80plus Platinum</effeciency>
-              </brand>
-            </psu>
-        </specification>
-      </model>
+  <desktop type="Gaming/Work Station desktop">
+    <brand model="Acer predator_po3-640">
+      <Processor>Intel Core i7-12700F 12 cores 20 threads with 4.90 Ghz Speed</Processor>
+      <Ram> G_Sill 8x2 GB DDR4 3200Mhz Speed</Ram>
+      <Storage> Samsung Evo970 VME M.2 SSD 1 TB</Storage>
+      <Monitor> Predator_xb273U_NX 26 inches with 2560x1440 and 275Hz Refresh rate</Monitor>
+      <GPU> Rog_Strix GeForce RTX 4090 OC Edition DDR6X 24Gb with 2460 MHz/Gaming mode up to 2610 MHz</GPU>
+      <PSU> Rog_Thor 1200 Watts 80plus Platinum</PSU>
     </brand>
   </desktop>
 </computers>
