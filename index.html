@@ -4,67 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computers</title>
+    <title>Computer</title>
 </head>
 <body>
-    <h2>Computers</h2>
-    <button type="button" onclick="loadXMLDoc()">Computers</button>
-    <hr>
+    <h2>Computer:</h2>
 
-    <div id="parsing">
-        
-    </div>
-
+    <button type="button" onclick="loadXMLDoc()">
+    My Computers</button>
+    
+    <table id="demo" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"">
+    </table>
+    
     <script>
         function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    createList(this);
+                    createTable(this);
                 }
             };
             xmlhttp.open("GET", "Computers.xml", true);
             xmlhttp.send();
         }
         
-        function createList(xml) {
-            var i, j, k, l, xmlDoc, txt;
+        function createTable(xml) {
+            var i, xmlDoc, txt;
             
             // Actual XML File Object mode
             xmlDoc = xml.responseXML; 
 
-            var computers = xmlDoc.getElementsByTagName('computers')[0];
+            txt = `
+                <tr>
+                    <th>UNIT</th>
+                    <th>TYPE</th>
+                    <th>MODEL</th>
+                    <th>SPECIFICATION</th>
+                </tr>
+            `;
 
-            txt='';
-            
-            for (i = 0; i < computers.children.length; i++) {
-                txt += `<h1>${computers.children[i].getAttribute('type')}</h1>`;
-                for (j = 0; j < computers.children[i].children.length; j++) {
-                    txt += 
-                    `
-                    <ul>
-                        <li><h3>${computers.children[i].children[j].getAttribute('model')}</h3>
-                    
-                    `;
-                    for (k = 0; k < computers.children[i].children[j].children.length; k++) {
-                        txt += 
-                        `
-                                <ul>
-                                    <li>${computers.children[i].children[j].children[k].tagName} - ${computers.children[i].children[j].children[k].childNodes[0].nodeValue}</li>
-                                </ul>
-                        `;
-                        }
-                        txt += 
-                    `    
-                            </li>
-                        </ul>
-                        
-                    `;
-                } 
+            var Unit = xmlDoc.getElementsByTagName("Unit");
+            var Type = xmlDoc.getElementsByTagName("Type");
+            var Model = xmlDoc.getElementsByTagName("Model");
+            var Specification = xmlDoc.getElementsByTagName("Specification");
 
-            document.getElementById("parsing").innerHTML = txt;
+            for (i = 0; i< Unit.length; i++) {
+                txt += `
+                    <tr>
+                        <td>${Unit[i].childNodes[0].nodeValue}</td>
+                        <td>${Type[i].childNodes[0].nodeValue}</td>
+                        <td>${Model[i].childNodes[0].nodeValue}</td>
+                        <td>
+                            <ul>`;
+                                var list = "";
+                                for(j = 0; j < Specification.length;j++){
+                                    list += `<li>${Specification[i].children[j].childNodes[0].nodeValue}</li>`;
+                                }
+
+                txt +=`
+                                ${list}
+                            </ul>
+                        </td>
+                    </tr>
+                `;                
+            }
+
+            document.getElementById("demo").innerHTML = txt;
         }
-    }
     </script>
 </body>
 </html>
